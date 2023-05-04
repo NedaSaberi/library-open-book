@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>openBook</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        ul, li{
+            list-style: none;
+        }
+        .container{
+            width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid  #bdbaba;
+        }
+        .container #top-title{
+            background-color: #bdbaba;
+            padding: 10px;
+            margin: -20px;
+            text-align: center;
+        }
+        .container h2.title{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+        }
+        .container #srchBox{
+            margin: 40px 20px 20px;
+            padding: 10px;
+            height: 30px;
+        }
+        .container ul li{
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid rgba(8, 41, 4, 0.3);
+            padding: 10px;
+        }
+        .container ul li .remove{
+            background-color: rgb(236, 88, 62);
+            padding: 3px 5px;
+            color: #fff;
+            border-radius: 2px;
+        }
+        .container .input-group-1, .input-group-2{
+            margin: 40px 20px;
+        }
+        .container .input-group-2{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container .input-group-2 #addBtn{
+            padding: 5px 25px;
+            background-color: rgb(43, 129, 43);
+            color: #fff;
+            border: none;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <h2 id="top-title">Open Books</h2> 
+        <form action="search">
+            <input type="text" id="srchBox" placeholder="what are you looking for ..." >
+        </form>
+        <h2 class="title">Book List</h2>
+        <ul>    
+            <!-- <li>
+                <span class="title">God Father</span>
+                <span class="remove">remove</span>
+            </li>
+            <li>
+                <span class="title">The subtle art of not giving a fuck</span>
+                <span class="remove">remove</span>
+            </li>
+            <li>
+                <span class="title">Harry Patter</span>
+                <span class="remove">remove</span>
+            </li>
+            <li>
+                <span class="title">The little prince</span>
+                <span class="remove">remove</span>
+            </li>
+            <li>
+                <span class="title">Think and Grow Rich</span>
+                <span class="remove">remove</span>
+            </li> -->
+        </ul>
+        <div class="input-group-1">
+            <input type="checkbox" id="chkb">
+            <label for="chkb">Hide books</label>
+        </div>
+        <div class="input-group-2">
+            <input type="text" id="addBox" placeholder="Add a book ...">
+            <button id="addBtn">Add</button>
+        </div>
+        
+
+    </div> 
+    <script src="./openBook.js"></script>
+</body>
+</html>
